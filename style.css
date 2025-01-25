@@ -1,0 +1,269 @@
+
+body {
+    background-color: #b7b7ca;
+    font-family: 'Inter', Arial, sans-serif;
+    color: #b9c3ce; 
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+.topclass {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+    gap: 15px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px 0;
+}
+
+.split-box {
+    display: flex;
+    flex-direction: row; /* Arrange the two sections horizontally */
+    justify-content: space-between;
+    gap: 20px; /* Consistent gap */
+    width: 650px;
+    padding: 15px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.1); /* Subtle shadow */
+}
+
+.section {
+    flex: 1; /* Equal width for both sections */
+    padding: 12px;
+    border: 1px solid #cfbaba; /* Lighter border */
+    border-radius: 5px;
+    background: #2a91a3; /* White background for sections */
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+    font-size: 1rem; /* Larger font size for better readability */
+}
+
+.split-box .section:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+
+.widebox {
+    flex: 1;
+    min-width: 250px;
+    height: 100px;
+    background-color: #3498db; 
+    border-radius: 8px;
+    margin: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff; 
+    font-weight: bold;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    transition: transform 0.3s ease-in-out;
+}
+
+.widebox:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+
+.dwncon {
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+    flex-wrap: wrap;
+    margin: 20px 0;
+}
+
+.sqbox {
+    width: 250px;
+    height: 450px;
+    background-color: #cb4fd3; 
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+    /* gap: 30px; */
+}
+
+.sqbox:hover {
+    transform: scale(1.05);
+}
+
+
+.dwnto {
+    display: flex; /* Ensures the child boxes align horizontally */
+    justify-content: space-between; /* Adds space between the boxes */
+    align-items: flex-start; /* Aligns the boxes to the top */
+    gap: 20px; /* Adds consistent spacing between the two boxes */
+    padding: 20px; /* Optional: Adds padding around the container */
+    margin: 20px auto; /* Centers the entire section */
+    width: 100%; /* Ensures the section spans the full width of its container */
+    max-width: 1200px; /* Restricts the width of the section for better layout */
+    box-sizing: border-box; /* Includes padding in the width calculation */
+}
+
+.boxdown-1, .boxdown-2 {
+    flex: 1; /* Ensures both boxes take equal space */
+    padding: 20px; /* Adds padding inside each box */
+    border: 1px solid #ccc; /* Adds a border to visually separate the boxes */
+    border-radius: 8px; /* Adds rounded corners */
+    background-color: #ffffff; /* Sets a white background */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Adds subtle shadow for depth */
+    max-width: 65%; /* Limits the width of each box */
+}
+
+.boxdown-1:hover,
+.boxdown-2:hover {
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+
+label {
+    font-weight: bold;
+    color: #34495e; 
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="number"],
+select {
+    margin: 8px 0;
+    padding: 10px;
+    border: 1px solid #bdc3c7; 
+    border-radius: 4px;
+    width: 100%;
+    box-shadow: inset 1px 1px 3px rgba(0, 0, 0, 0.05);
+    font-size: 0.9rem;
+}
+
+
+input[type="submit"] {
+    margin-top: 15px;
+    padding: 12px;
+    background-color: #e74c3c; 
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+
+.boxdown-1 form, .boxdown-2 form {
+    display: flex;
+    flex-direction: column; /* Aligns form elements vertically */
+    gap: 10px; /* Adds space between form elements */
+}
+
+input, select, label {
+    width: 100%; /* Makes inputs and selects fill their container */
+    box-sizing: border-box; /* Ensures padding doesn’t affect width */
+}
+
+input[type="submit"] {
+    width: auto; /* Ensures the submit button does not stretch */
+    background-color: #3498db; /* Blue color for the button */
+    color: white; /* White text on the button */
+    padding: 10px 20px; /* Adds padding for better button size */
+    border: none; /* Removes the border */
+    border-radius: 5px; /* Rounded button corners */
+    cursor: pointer; /* Pointer cursor for better UX */
+}
+
+input[type="submit"]:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+
+
+/* General Widebox Styling */
+.widebox {
+    flex: 1;
+    min-width: 300px;
+    padding: 20px;
+    background-color: #3498db; /* Blue background */
+    color: #ffffff; /* White text */
+    border-radius: 10px;
+    margin: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    font-size: 1rem;
+}
+
+.widebox h2 {
+    margin-bottom: 15px;
+    color: #ffffff; /* White title text */
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-align: center;
+}
+
+/* Styling the Tables Inside Widebox */
+.widebox table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+    background-color: #ffffff; /* White background for table */
+    color: #2c3e50; /* Dark text for table content */
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.widebox table th, .widebox table td {
+    border: 1px solid #ddd; /* Light border for cells */
+    padding: 12px; /* Add padding for better spacing */
+    text-align: left; /* Align content to the left */
+}
+
+.widebox table th {
+    background-color: #2980b9; /* Slightly darker blue for header */
+    color: #ffffff; /* White text for header */
+    font-weight: bold;
+}
+
+.widebox table tr:nth-child(even) {
+    background-color: #f9f9fb; /* Light gray for even rows */
+}
+
+.widebox table tr:hover {
+    background-color: #dcecfb; /* Light blue on hover */
+}
+
+/* Action Links */
+.widebox table a {
+    color: #3498db; /* Blue links for actions */
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.2s ease-in-out;
+}
+
+.widebox table a:hover {
+    color: #e74c3c; /* Red on hover */
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 768px) {
+    .widebox {
+        margin: 20px 0;
+        padding: 15px;
+    }
+
+    .widebox table {
+        font-size: 0.9rem; /* Smaller font size for smaller screens */
+    }
+}
